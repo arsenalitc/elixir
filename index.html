@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elixir Electronics - Pioneer in Industrial Communication Systems since 1977. Leading manufacturer of Industrial PA Systems, Paging & Talkback Systems for Cement, Steel, Chemical, and Power Plants across India.">
+    <meta name="keywords" content="Industrial PA System, Paging System, Talkback System, Industrial Communication, Cement Plant Communication, Steel Plant Communication, VOIP Industrial Phone, IP Paging System, Industrial Intercom">
+    <meta name="author" content="Elixir Electronics">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#0a3d62">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gray-butterfly-654100.hostingersite.com/">
+    <meta property="og:title" content="Elixir Electronics | Industrial Communication Systems Since 1977">
+    <meta property="og:description" content="Pioneer in Industrial PA Systems, Paging & Talkback Systems. Trusted by ISRO, BHEL, Indian Railways and 150+ corporations.">
+    <meta property="og:image" content="https://gray-butterfly-654100.hostingersite.com/images/logo/elixir-logo-white.png">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elixir Electronics | Industrial Communication Systems">
+    <meta name="twitter:description" content="47+ years of excellence in Industrial PA & Talkback Systems for heavy industries.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gray-butterfly-654100.hostingersite.com/">
+
+    <title>Elixir Electronics | Industrial Communication Systems Since 1977</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo/elixir-logo-white.png">
+    <link rel="apple-touch-icon" href="images/logo/elixir-logo-white.png">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-v20-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-display-v40-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="images/logo/elixir-name-white.png" as="image">
+
+    <!-- Critical CSS inlined for performance -->
+    <style>
+        @font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/inter-v20-latin-regular.woff2) format('woff2')}
+        @font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/inter-v20-latin-500.woff2) format('woff2')}
+        @font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/inter-v20-latin-600.woff2) format('woff2')}
+        @font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/inter-v20-latin-700.woff2) format('woff2')}
+        @font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/playfair-display-v40-latin-600.woff2) format('woff2')}
+        @font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/playfair-display-v40-latin-700.woff2) format('woff2')}
+        :root{--primary:#0a3d62;--primary-light:#1e5f8a;--primary-dark:#062740;--accent:#e67e22;--accent-hover:#d35400;--text-dark:#1a1a2e;--text-light:#545b62;--white:#fff;--gray-50:#f8f9fa;--gray-100:#e9ecef;--shadow-sm:0 2px 4px rgba(0,0,0,.05);--shadow-md:0 4px 12px rgba(0,0,0,.1);--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px}
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;color:var(--text-dark);line-height:1.6;overflow-x:hidden;background:var(--white)}
+        h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.2}
+        h1{font-size:clamp(2.5rem,5vw,4rem)}
+        a{color:var(--primary);text-decoration:none}
+        img{max-width:100%;height:auto}
+        /* Dark Navbar for White Logo */
+        .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--primary-dark);backdrop-filter:blur(10px);box-shadow:var(--shadow-md);transition:all .3s ease}
+        .navbar.scrolled{background:rgba(6,39,64,.98)}
+        .nav-container{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;height:80px}
+        .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+        .logo-img{height:45px;width:auto}
+        .nav-menu{display:flex;gap:8px;list-style:none;align-items:center}
+        .nav-menu a{display:block;padding:10px 18px;color:rgba(255,255,255,.9);font-weight:500;font-size:15px;border-radius:var(--radius-sm);transition:all .3s ease}
+        .nav-menu a:hover{background:rgba(255,255,255,.1);color:var(--white)}
+        .nav-menu a.active{color:var(--accent)}
+        .nav-cta{background:var(--accent)!important;color:#000!important;padding:12px 24px!important;border-radius:var(--radius-sm)!important}
+        .nav-cta:hover{background:var(--accent-hover)!important}
+        .mobile-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+        .mobile-toggle span{width:24px;height:2px;background:var(--white)}
+        .hero{min-height:100vh;background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 50%,var(--primary-light) 100%);display:flex;align-items:center;position:relative;overflow:hidden}
+        .hero-pattern{position:absolute;top:0;left:0;right:0;bottom:0;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");opacity:.5}
+        .hero-container{max-width:1280px;margin:0 auto;padding:120px 24px 80px;position:relative;z-index:1}
+        .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+        .hero-content h1{color:var(--white);margin-bottom:24px}
+        .hero-content h1 span{color:var(--accent)}
+        .hero-content p{font-size:1.125rem;color:rgba(255,255,255,.85);margin-bottom:32px;max-width:520px}
+        .hero-badges{display:flex;gap:12px;margin-bottom:32px;flex-wrap:wrap}
+        .badge{background:rgba(255,255,255,.1);backdrop-filter:blur(10px);padding:8px 16px;border-radius:50px;font-size:13px;color:var(--white);border:1px solid rgba(255,255,255,.2)}
+        .hero-buttons{display:flex;gap:16px;flex-wrap:wrap}
+        .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 32px;border-radius:var(--radius-sm);font-weight:600;font-size:15px;text-decoration:none;border:none;cursor:pointer;font-family:inherit;transition:all .3s ease}
+        .btn-primary{background:var(--accent);color:#000}
+        .btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 8px 25px rgba(230,126,34,.3)}
+        .btn-outline-light{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.5)}
+        .btn-outline-light:hover{background:var(--white);color:var(--primary)}
+        .hero-visual{display:flex;justify-content:center;align-items:center}
+        .hero-product-img{max-width:100%;height:auto;filter:drop-shadow(0 20px 40px rgba(0,0,0,.3));animation:float 6s ease-in-out infinite}
+        @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+        @media(max-width:1024px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-content p{margin-left:auto;margin-right:auto}.hero-badges,.hero-buttons{justify-content:center}.hero-visual{margin-top:40px}}
+        @media(max-width:768px){.nav-menu{display:none;position:absolute;top:80px;left:0;right:0;background:var(--primary-dark);flex-direction:column;padding:24px;gap:8px;box-shadow:var(--shadow-md)}.nav-menu.active{display:flex}.mobile-toggle{display:flex}}
+    </style>
+
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+
+    <!-- Schema.org structured data for AI and search engines -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Elixir Electronics",
+        "alternateName": "Elixir Electronics Chennai",
+        "url": "https://gray-butterfly-654100.hostingersite.com",
+        "logo": "https://gray-butterfly-654100.hostingersite.com/images/logo/elixir-logo-white.png",
+        "description": "Pioneer manufacturer of Industrial PA Systems, Paging & Talkback Systems since 1977. Serving cement plants, steel mills, power plants, and government organizations.",
+        "foundingDate": "1977",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17/9, Krishnamurthy Street, West Mambalam",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600033",
+            "addressCountry": "IN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-44-2472-5070",
+            "contactType": "sales",
+            "email": "elixirin2008@gmail.com",
+            "availableLanguage": ["English", "Hindi", "Tamil"]
+        },
+        "sameAs": [],
+        "areaServed": {
+            "@type": "Country",
+            "name": "India"
+        },
+        "knowsAbout": ["Industrial PA Systems", "Paging Systems", "Talkback Systems", "VoIP Industrial Phones", "IP-based Communication Systems"],
+        "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "ISO 9001:2015"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Elixir Electronics",
+        "url": "https://gray-butterfly-654100.hostingersite.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://gray-butterfly-654100.hostingersite.com/products.html?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Elixir Electronics",
+        "image": "https://gray-butterfly-654100.hostingersite.com/images/logo/elixir-logo-white.png",
+        "@id": "https://gray-butterfly-654100.hostingersite.com",
+        "url": "https://gray-butterfly-654100.hostingersite.com",
+        "telephone": "+91-44-2472-5070",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17/9, Krishnamurthy Street, West Mambalam",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600033",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 13.0382,
+            "longitude": 80.2318
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "18:00"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Industrial Communication Products",
+        "description": "Range of industrial-grade PA and communication systems",
+        "itemListElement": [
+            {
+                "@type": "Product",
+                "position": 1,
+                "name": "Analog Paging & Talkback System",
+                "description": "Full duplex two-way communication systems for industrial environments",
+                "brand": {"@type": "Brand", "name": "Elixir Electronics"},
+                "category": "Industrial Communication Equipment",
+                "offers": {"@type": "Offer", "priceCurrency": "INR", "price": "27000", "availability": "https://schema.org/InStock"}
+            },
+            {
+                "@type": "Product",
+                "position": 2,
+                "name": "IP-Based PA System (EITU 9000 IP)",
+                "description": "Industrial grade IP paging phone with 30W amplifier, IP67 weatherproof",
+                "brand": {"@type": "Brand", "name": "Elixir Electronics"},
+                "category": "VoIP Industrial Phone",
+                "offers": {"@type": "Offer", "priceCurrency": "INR", "price": "95000", "availability": "https://schema.org/InStock"}
+            },
+            {
+                "@type": "Product",
+                "position": 3,
+                "name": "IP Audio Decoder (EAU-30 IP)",
+                "description": "IP to analog audio decoder with built-in 30W Class-D amplifier",
+                "brand": {"@type": "Brand", "name": "Elixir Electronics"},
+                "category": "Audio Equipment",
+                "offers": {"@type": "Offer", "priceCurrency": "INR", "price": "15000", "availability": "https://schema.org/InStock"}
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation with Dark Theme for White Logo -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Elixir Electronics Home">
+                <img src="images/logo/elixir-name-white.png" alt="Elixir Electronics Logo" class="logo-img" width="180" height="45">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="nav-dropdown">
+                    <a href="products.html">Products</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="products.html#analog">Analog Paging Systems</a></li>
+                        <li><a href="products.html#ip">IP-Based PA Systems</a></li>
+                        <li><a href="products.html#voip">VoIP Industrial Phones</a></li>
+                        <li><a href="products.html#decoders">Audio Decoders</a></li>
+                        <li><a href="products.html">View All Products</a></li>
+                    </ul>
+                </li>
+                <li><a href="industries.html">Industries</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="hero-container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badges">
+                        <span class="badge">Est. 1977</span>
+                        <span class="badge">ISO 9001:2015</span>
+                        <span class="badge">Made in India</span>
+                    </div>
+                    <h1>Pioneering <span>Industrial Communication</span> Systems</h1>
+                    <p>For nearly five decades, Elixir Electronics has been the trusted partner for critical communication infrastructure in India's largest industrial facilities. From cement plants to steel mills, space research centers to nuclear facilities, we deliver reliable PA and Talkback systems that keep operations running safely.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            Get a Quote
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="products.html" class="btn btn-outline-light">Explore Products</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="images/products/eitu-9000-ip.webp" alt="EITU 9000 IP - Industrial Grade IP Paging Phone" class="hero-product-img" width="400" height="300" loading="eager" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Band -->
+    <div class="stats-band">
+        <div class="container">
+            <div class="stats-band-inner">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div class="stat-number">47+</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Installations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Corporate Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        </div>
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Industries Served</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Export Countries</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Preview Section -->
+    <section class="section-gray" style="padding-top: 120px;" id="about-preview">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <h2>Building India's Industrial <span>Communication Backbone</span></h2>
+                    <p>Established in 1977, Elixir Electronics has grown from a small workshop in Chennai to become one of India's most respected manufacturers of industrial communication equipment.</p>
+                    <p>We specialize in designing and manufacturing Public Address Systems, Paging & Talkback Systems specifically engineered for harsh industrial environments. Our products operate reliably in cement dust, steel mill heat, and chemical plant conditions where standard equipment fails.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Industrial Grade</h4>
+                                <p>Built for extreme conditions</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4>ISO 9001:2015</h4>
+                                <p>Quality certified systems</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                            </div>
+                            <div>
+                                <h4>47+ Years</h4>
+                                <p>Industry experience</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Global Exports</h4>
+                                <p>UAE, Canada, Germany, South Africa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-secondary mt-4">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/products/ppt-9000-hs-cd.jpg" alt="PPT 9000 HS-CD Handset Type Paging Unit" class="about-image-main" width="400" height="533" loading="lazy" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);">
+                    <div class="about-badge">
+                        <div class="about-badge-number">1977</div>
+                        <div class="about-badge-text">Since</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Products</span>
+                <h2 class="section-title">Industrial Communication Solutions</h2>
+                <p class="section-desc">Comprehensive range of rugged, reliable communication systems designed for the most demanding industrial environments.</p>
+            </div>
+            <div class="grid-3">
+                <article class="card product-card">
+                    <div class="card-image">
+                        <img src="images/products/ppt-9000-hs-cd.jpg" alt="PPT 9000 Handset Type Analog Paging System" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Analog Paging & Talkback Systems</h3>
+                        <p class="card-text">Robust two-way communication systems for field operations. Desktop, handset, and pilferproof variants available for harsh industrial environments.</p>
+                        <div class="card-tags">
+                            <span class="tag">Two-Way</span>
+                            <span class="tag">Weatherproof</span>
+                            <span class="tag">240V AC</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="card product-card">
+                    <div class="card-image">
+                        <img src="images/products/eitu-9000-ip.webp" alt="EITU 9000 IP Based Industrial Phone" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">IP-Based PA Systems</h3>
+                        <p class="card-text">Modern IP-based public address systems with LAN/WAN connectivity. Make announcements from anywhere using SIP protocol with web-based configuration.</p>
+                        <div class="card-tags">
+                            <span class="tag">SIP Protocol</span>
+                            <span class="tag">Web Config</span>
+                            <span class="tag">30W RMS</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="card product-card">
+                    <div class="card-image">
+                        <img src="images/products/eitu-9000-ip.webp" alt="Industrial VoIP Telephone EITU 9000 IP" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">VoIP Industrial Telephones</h3>
+                        <p class="card-text">IP67 weatherproof industrial SIP phones with 30W built-in amplifiers. Operating temperature range from -40&deg;C to +85&deg;C for extreme conditions.</p>
+                        <div class="card-tags">
+                            <span class="tag">IP67 Rated</span>
+                            <span class="tag">SIP/VoIP</span>
+                            <span class="tag">Full Duplex</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="card product-card">
+                    <div class="card-image">
+                        <img src="images/products/eau-30-ip.jpg" alt="EAU-30 IP Audio Decoder Unit" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Audio Decoder Units</h3>
+                        <p class="card-text">IP to analog audio interface units with built-in 30W Class-D amplifiers. Support SIP protocol with echo cancellation and web-based configuration.</p>
+                        <div class="card-tags">
+                            <span class="tag">Class D Amp</span>
+                            <span class="tag">Echo Cancel</span>
+                            <span class="tag">Wall Mount</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="card product-card">
+                    <div class="card-image">
+                        <img src="images/products/ppt-9000-ip-w.webp" alt="PPT 9000 IP-W Wireless Paging System" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Wireless Paging Systems</h3>
+                        <p class="card-text">Industrial-grade wireless communication for areas where cabling is impractical. Wi-Fi enabled with reliable coverage in harsh conditions.</p>
+                        <div class="card-tags">
+                            <span class="tag">Wireless</span>
+                            <span class="tag">Wi-Fi 802.11</span>
+                            <span class="tag">Long Range</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="card product-card">
+                    <div class="card-image">
+                        <img src="images/products/tiu-1.jpg" alt="Telephone PA Coupler Interface Unit" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Telephone PA Couplers</h3>
+                        <p class="card-text">Interface telephone systems with PA infrastructure. Enable announcements through existing phone networks with easy integration.</p>
+                        <div class="card-tags">
+                            <span class="tag">Integration</span>
+                            <span class="tag">Hybrid</span>
+                            <span class="tag">Easy Install</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center mt-5">
+                <a href="products.html" class="btn btn-secondary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="section-dark" id="industries">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="section-header">
+                <span class="section-label section-label-accent">Industries We Serve</span>
+                <h2 class="section-title">Trusted Across Critical Sectors</h2>
+                <p class="section-desc">Our systems operate 24/7 in India's most demanding industrial environments, ensuring safety and operational efficiency.</p>
+            </div>
+            <div class="grid-4">
+                <div class="industry-card">
+                    <div class="industry-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M5 20V8l7-5 7 5v12"></path><path d="M10 20v-6h4v6"></path></svg>
+                    </div>
+                    <h3>Cement Plants</h3>
+                    <p>Dust-resistant systems for kiln areas and material handling</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path><path d="M16 13H8"></path><path d="M16 17H8"></path><path d="M10 9H8"></path></svg>
+                    </div>
+                    <h3>Steel Mills</h3>
+                    <p>Heat-resistant units for blast furnaces and rolling mills</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"></path><path d="M12 18v4"></path><path d="m4.93 4.93 2.83 2.83"></path><path d="m16.24 16.24 2.83 2.83"></path><path d="M2 12h4"></path><path d="M18 12h4"></path><path d="m4.93 19.07 2.83-2.83"></path><path d="m16.24 7.76 2.83-2.83"></path></svg>
+                    </div>
+                    <h3>Power Plants</h3>
+                    <p>Critical communication for thermal and hydro facilities</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 10 18l-1.5-2.5L7 13l.5-2 2-1.5L11 8l1-3 1 3 1.5 1.5 2 1.5.5 2-1.5 2.5L14 18l-.5 2.5"></path><path d="M12 22v-8"></path><path d="M8 22h8"></path></svg>
+                    </div>
+                    <h3>Chemical & Petrochemical</h3>
+                    <p>Explosion-proof systems for hazardous areas</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v6"></path><path d="M12 17v6"></path><path d="m5.6 5.6 4.2 4.2"></path><path d="m14.2 14.2 4.2 4.2"></path><path d="M1 12h6"></path><path d="M17 12h6"></path><path d="m5.6 18.4 4.2-4.2"></path><path d="m14.2 9.8 4.2-4.2"></path></svg>
+                    </div>
+                    <h3>Atomic Energy</h3>
+                    <p>Specialized systems for nuclear facilities</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v16"></path><path d="M18 4v16"></path><path d="M6 8h12"></path><path d="M6 12h12"></path><path d="M6 16h12"></path></svg>
+                    </div>
+                    <h3>Railways</h3>
+                    <p>Station announcements and yard communication</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 16.5 3-3"></path><circle cx="12" cy="12" r="10"></circle><path d="M16.5 7.5 12 12"></path><circle cx="12" cy="12" r="2"></circle></svg>
+                    </div>
+                    <h3>Space Research</h3>
+                    <p>Mission-critical communication for ISRO facilities</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M4 4v13"></path><path d="M20 4H6.5A2.5 2.5 0 0 0 4 6.5V19"></path><path d="M9 9h6v6H9z"></path></svg>
+                    </div>
+                    <h3>Paper & Sugar Mills</h3>
+                    <p>Moisture-resistant systems for process plants</p>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="industries.html" class="btn btn-primary">Explore All Industries</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title">The Elixir Advantage</h2>
+                <p class="section-desc">What makes our industrial communication systems the preferred choice for India's leading industries.</p>
+            </div>
+            <div class="grid-4">
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                    </div>
+                    <h3>Industrial Durability</h3>
+                    <p>MS powder-coated enclosures, weatherproof design rated for 0&deg; to 55&deg;C operation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h3>47 Years Experience</h3>
+                    <p>Decades of field-tested solutions with continuous innovation and improvement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    </div>
+                    <h3>Custom Engineering</h3>
+                    <p>Solutions tailored to your specific plant layout and communication requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <h3>Dedicated Support</h3>
+                    <p>Pan-India service network with prompt technical assistance and spare parts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="section-gray" id="clients">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Clients</span>
+                <h2 class="section-title">Trusted by Industry Leaders</h2>
+                <p class="section-desc">Proud partners with India's most prestigious industrial organizations and government departments.</p>
+            </div>
+            <div class="grid-6">
+                <div class="client-card">
+                    <span class="client-name">BHEL</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">ISRO</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">Indian Railways</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">NLC India</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">Dalmia Cement</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">India Cements</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">Chettinad Cement</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">ICF Chennai</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">BEML</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">ETPS</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">DCW Ltd</span>
+                </div>
+                <div class="client-card">
+                    <span class="client-name">Dept. of Atomic Energy</span>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="clients.html" class="btn btn-secondary">View All Clients</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-dark" id="cta">
+        <div class="container text-center">
+            <h2 class="section-title mb-3">Ready to Upgrade Your Industrial Communication?</h2>
+            <p class="section-desc mb-4" style="max-width: 600px; margin-left: auto; margin-right: auto;">Contact us today for a consultation and discover how Elixir Electronics can help modernize your plant's communication infrastructure.</p>
+            <div class="d-flex justify-center gap-2">
+                <a href="contact.html" class="btn btn-primary btn-lg">Request a Quote</a>
+                <a href="tel:+914424725070" class="btn btn-outline-light btn-lg">Call: 044-2472 5070</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="Elixir Electronics Home">
+                        <img src="images/logo/elixir-name-white.png" alt="Elixir Electronics" class="logo-img" width="180" height="45" loading="lazy">
+                    </a>
+                    <p>Pioneering industrial communication systems since 1977. Trusted by India's leading industries for reliable PA and Talkback solutions.</p>
+                    <div class="footer-social">
+                        <a href="mailto:elixirin2008@gmail.com" aria-label="Email us">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <a href="tel:+914424725070" aria-label="Call us">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html#analog">Analog Paging Systems</a></li>
+                        <li><a href="products.html#ip">IP-Based PA Systems</a></li>
+                        <li><a href="products.html#voip">VoIP Industrial Phones</a></li>
+                        <li><a href="products.html#decoders">Audio Decoders</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="industries.html#cement">Cement Plants</a></li>
+                        <li><a href="industries.html#steel">Steel Mills</a></li>
+                        <li><a href="industries.html#power">Power Plants</a></li>
+                        <li><a href="industries.html#chemical">Chemical Plants</a></li>
+                        <li><a href="industries.html">All Industries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="clients.html">Our Clients</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elixir Electronics. All rights reserved. | GST: 33ABWPS7341B1ZG | IEC: 0407011471</p>
+                <p>Made with dedication in Chennai, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minimal JavaScript for Core Functionality -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileToggle.addEventListener('click', () => {
+            const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+            mobileToggle.setAttribute('aria-expanded', !expanded);
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar')) {
+                navMenu.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    navbar.classList.toggle('scrolled', window.scrollY > 50);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Intersection Observer for scroll reveal animations
+        if ('IntersectionObserver' in window) {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.card, .industry-card, .feature-card, .client-card, .stat-item').forEach(el => {
+                el.classList.add('reveal');
+                observer.observe(el);
+            });
+        }
+    </script>
+</body>
+</html>
