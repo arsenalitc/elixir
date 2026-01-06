@@ -160,7 +160,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 90px;
 }
 
 .logo {
@@ -171,7 +171,7 @@ img {
 }
 
 .logo-img {
-    height: 45px;
+    height: 60px;
     width: auto;
 }
 
@@ -1376,7 +1376,7 @@ section {
     .nav-menu {
         display: none;
         position: absolute;
-        top: 80px;
+        top: 90px;
         left: 0;
         right: 0;
         background: var(--primary-dark);
