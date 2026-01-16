@@ -272,8 +272,7 @@
     }
 
     function sendLeadData(data) {
-        // Send to console for debugging
-        console.log('Lead captured:', data);
+        // Lead data captured (logging disabled for production)
 
         // You can implement actual API call here
         // For now, we'll store in localStorage for later retrieval

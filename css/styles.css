@@ -2,41 +2,58 @@
    ELIXIR ELECTRONICS - CORPORATE WEBSITE STYLES
    ============================================= */
 
-/* Self-hosted fonts */
+/* Self-hosted fonts with optional display to prevent CLS */
 @font-face {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: optional;
     src: url('../fonts/inter-v20-latin-regular.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-display: swap;
+    font-display: optional;
     src: url('../fonts/inter-v20-latin-600.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-display: swap;
+    font-display: optional;
     src: url('../fonts/inter-v20-latin-700.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 600;
-    font-display: swap;
+    font-display: optional;
     src: url('../fonts/playfair-display-v40-latin-600.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
-    font-display: swap;
+    font-display: optional;
     src: url('../fonts/playfair-display-v40-latin-700.woff2') format('woff2');
+}
+/* Fallback fonts with metric overrides to match web fonts and eliminate CLS */
+@font-face {
+    font-family: 'Inter Fallback';
+    src: local('Arial');
+    ascent-override: 90.20%;
+    descent-override: 22.48%;
+    line-gap-override: 0%;
+    size-adjust: 107.40%;
+}
+@font-face {
+    font-family: 'Playfair Fallback';
+    src: local('Times New Roman');
+    ascent-override: 97.25%;
+    descent-override: 22.56%;
+    line-gap-override: 0%;
+    size-adjust: 112.06%;
 }
 
 :root {
@@ -78,7 +95,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter', 'Inter Fallback', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
@@ -87,7 +104,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Playfair Display', 'Playfair Fallback', Georgia, serif;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -179,11 +196,11 @@ img {
     color: var(--white);
     font-weight: 700;
     font-size: 26px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', 'Playfair Fallback', serif;
 }
 
 .logo-text {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', 'Playfair Fallback', serif;
     font-size: 26px;
     font-weight: 700;
     color: var(--primary);
@@ -558,7 +575,7 @@ img {
 }
 
 .stat-number {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', 'Playfair Fallback', serif;
     font-size: 3rem;
     font-weight: 700;
     color: var(--primary);
@@ -679,7 +696,7 @@ section {
 }
 
 .card-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Inter Fallback', sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 12px;
@@ -776,7 +793,7 @@ section {
 }
 
 .industry-card h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Inter Fallback', sans-serif;
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--white);
@@ -823,7 +840,7 @@ section {
 }
 
 .feature-card h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Inter Fallback', sans-serif;
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 12px;
@@ -950,7 +967,7 @@ section {
 }
 
 .about-feature h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Inter Fallback', sans-serif;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 4px;
@@ -985,7 +1002,7 @@ section {
 }
 
 .about-badge-number {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', 'Playfair Fallback', serif;
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1;
@@ -1038,7 +1055,7 @@ section {
 }
 
 .timeline-year {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', 'Playfair Fallback', serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary);
@@ -1046,7 +1063,7 @@ section {
 }
 
 .timeline-content h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Inter Fallback', sans-serif;
     font-weight: 600;
     margin-bottom: 8px;
 }
@@ -1105,7 +1122,7 @@ section {
 }
 
 .contact-item h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Inter Fallback', sans-serif;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 4px;
@@ -1224,7 +1241,7 @@ section {
 
 .footer h4,
 .footer .footer-heading {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Inter Fallback', sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 24px;
