@@ -60,6 +60,9 @@
             font-size: 14px;
             font-weight: 500;
         }
+        .btn-accent{background:#e67e22;color:#fff;border:none;cursor:pointer;transition:all 0.3s;font-weight:600;margin-bottom:12px}
+        .btn-accent:hover{background:#d35400;transform:translateY(-2px)}
+        .ask-price-btn{display:inline-block;padding:10px 20px;border-radius:6px}
     </style>
 </head>
 <body>
@@ -151,6 +154,7 @@
                                 <span class="tag">15W RMS</span>
                                 <span class="tag">90-270V AC</span>
                             </div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Desktop Paging & Talkback Unit">Ask for Price</button>
                             <a href="datasheets/Analog%20Desktop%20Paging%20%26%20Talkback%20Unit.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
@@ -166,6 +170,7 @@
                                 <span class="tag">Alert Tone</span>
                                 <span class="tag">Aluminum Body</span>
                             </div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Handset Type Paging & Talkback Unit">Ask for Price</button>
                             <a href="datasheets/Analog%20Handset%20type%20Paging%20%26%20Talkback%20Unit.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
@@ -181,6 +186,7 @@
                                 <span class="tag">Weatherproof</span>
                                 <span class="tag">Outdoor</span>
                             </div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Pilferproof Paging & Talkback Unit">Ask for Price</button>
                             <a href="datasheets/Analog%20Pilferproof%20Paging%20%26%20Talkback%20Unit.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
@@ -203,6 +209,7 @@
                                 <span class="tag">-40° to +85°C</span>
                                 <span class="tag">30W Amp</span>
                             </div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Industrial Grade IP Paging Phone (EITU 9000 IP)">Ask for Price</button>
                             <a href="datasheets/Industrial%20Grade%20IP%20%20Paging%20%26%20Talkback%20Phone.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
@@ -218,12 +225,13 @@
                                 <span class="tag">Wi-Fi</span>
                                 <span class="tag">Full Duplex</span>
                             </div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="IP Wireless Paging & Talkback Phone">Ask for Price</button>
                             <a href="datasheets/Industrial%20Grade%20IP%20Wireless%20Paging%20%26%20TalkBack%20Phone.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
                     <div class="card product-card">
-                        <div class="card-image" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line></svg>
+                        <div class="card-image">
+                            <img src="images/products/eitu-9000-ip.webp" alt="Paging Over SIP System" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Paging Over SIP System</h3>
@@ -233,7 +241,8 @@
                                 <span class="tag">IP67</span>
                                 <span class="tag">Metal Keypad</span>
                             </div>
-                            <a href="contact.html" class="btn btn-secondary btn-sm mt-3">Request Quote</a>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Paging Over SIP System">Ask for Price</button>
+                            <a href="datasheets/Industrial%20Grade%20IP%20%20Paging%20%26%20Talkback%20Phone.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
                 </div>
@@ -255,6 +264,7 @@
                                 <span class="tag">30W RMS</span>
                                 <span class="tag">Wall Mount</span>
                             </div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="IP to Analog Audio Decoder (EAU-30 IP)">Ask for Price</button>
                             <a href="datasheets/IP%20to%20Analog%20Audio%20Decoder%20Unit.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
@@ -270,6 +280,7 @@
                                 <span class="tag">802.11 b/g/n</span>
                                 <span class="tag">30W RMS</span>
                             </div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="IP Wireless Audio Decoder (EAU-30 IP-W)">Ask for Price</button>
                             <a href="datasheets/IP%20to%20Analog%20Audio%20Wireless%20Decoder%20Unit.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
@@ -365,5 +376,7 @@
     <script src="js/cookie-consent.js" defer></script>
     <!-- Lead Capture for Downloads -->
     <script src="js/lead-capture.js" defer></script>
+    <!-- Price Request Form -->
+    <script src="js/price-request.js" defer></script>
 </body>
 </html>

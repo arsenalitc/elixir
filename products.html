@@ -25,6 +25,9 @@
         .nav-menu a.active{color:var(--accent)!important}
         .logo-img{height:60px;width:auto}
         .mobile-toggle span{background:#fff}
+        .btn-accent{background:#e67e22;color:#fff;border:none;cursor:pointer;transition:all 0.3s;font-weight:600;margin-bottom:12px}
+        .btn-accent:hover{background:#d35400;transform:translateY(-2px)}
+        .ask-price-btn{display:inline-block;padding:10px 20px;border-radius:6px}
     </style>
 
     <!-- Schema.org Product List -->
@@ -117,7 +120,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Desktop Paging & Talkback Unit</h3>
                             <p class="card-text">Full duplex two-way communication with desktop microphone. High sensitive noise cancelling for clear audio in industrial environments.</p>
-                            <div class="product-price">From ₹27,000 <span>/ unit</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Desktop Paging & Talkback Unit">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">Two-Way</span>
                                 <span class="tag">15W RMS</span>
@@ -133,7 +136,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Handset Type Paging & Talkback Unit</h3>
                             <p class="card-text">Handset station with alert tone for full duplex communication. LM6 aluminum alloy construction for durability.</p>
-                            <div class="product-price">From ₹27,000 <span>/ unit</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Handset Type Paging & Talkback Unit">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">Handset</span>
                                 <span class="tag">Alert Tone</span>
@@ -149,7 +152,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Pilferproof Paging & Talkback Unit</h3>
                             <p class="card-text">Tamper-resistant design for high-security installations. Weatherproof construction for outdoor deployment.</p>
-                            <div class="product-price">From ₹27,000 <span>/ unit</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Pilferproof Paging & Talkback Unit">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">Pilferproof</span>
                                 <span class="tag">Weatherproof</span>
@@ -175,7 +178,7 @@
                         <div class="card-body">
                             <h3 class="card-title">IP Based One-Way PA System</h3>
                             <p class="card-text">General public address system over LAN/WAN. Make announcements from anywhere using SIP protocol. Individual, group, or all-call capability.</p>
-                            <div class="product-price">From ₹95,000 <span>/ system</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="IP Based One-Way PA System">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">SIP Protocol</span>
                                 <span class="tag">LAN/WAN</span>
@@ -185,29 +188,29 @@
                         </div>
                     </div>
                     <div class="card product-card">
-                        <div class="card-image" style="background: linear-gradient(135deg, #1e5f8a 0%, #0a3d62 100%);">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        <div class="card-image">
+                            <img src="images/products/eitu-9000-ip.webp" alt="IP Based Two-Way Talkback System" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">IP Based Two-Way Talkback System</h3>
                             <p class="card-text">Full duplex IP communication for industrial environments. VoIP based with echo cancellation and DTMF support.</p>
-                            <div class="product-price">From ₹95,000 <span>/ system</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="IP Based Two-Way Talkback System">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">Full Duplex</span>
                                 <span class="tag">VoIP</span>
                                 <span class="tag">Echo Cancel</span>
                             </div>
-                            <a href="contact.html" class="btn btn-secondary btn-sm mt-3">Request Quote</a>
+                            <a href="datasheets/Industrial%20Grade%20IP%20%20Paging%20%26%20Talkback%20Phone.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
                     <div class="card product-card">
                         <div class="card-image">
-                            <img src="images/products/decoder-wireless.jpg" alt="IP Wireless Paging System" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
+                            <img src="images/products/decoder-wireless.jpg" alt="IP Wireless Audio Decoder Unit" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">IP Wireless Paging System</h3>
-                            <p class="card-text">Wi-Fi enabled wireless paging for areas where cabling is impractical. 802.11 b/g/n support with industrial-grade reliability.</p>
-                            <div class="product-price">From ₹15,000 <span>/ unit</span></div>
+                            <h3 class="card-title">IP Wireless Audio Decoder Unit</h3>
+                            <p class="card-text">Wi-Fi enabled wireless audio decoder for areas where cabling is impractical. 802.11 b/g/n support with industrial-grade reliability.</p>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="IP Wireless Audio Decoder Unit">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">Wi-Fi</span>
                                 <span class="tag">Wireless</span>
@@ -233,7 +236,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Industrial Grade IP Paging Phone (EITU 9000 IP)</h3>
                             <p class="card-text">IP67 weatherproof SIP phone with 30W built-in amplifier. Operating temperature -40°C to +85°C for extreme conditions.</p>
-                            <div class="product-price">From ₹95,000 <span>/ unit</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Industrial Grade IP Paging Phone (EITU 9000 IP)">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">IP67</span>
                                 <span class="tag">-40° to +85°C</span>
@@ -249,7 +252,7 @@
                         <div class="card-body">
                             <h3 class="card-title">IP Wireless Paging & Talkback Phone</h3>
                             <p class="card-text">Industrial grade wireless VoIP phone with Wi-Fi connectivity. Full duplex communication with noise cancelling handset.</p>
-                            <div class="product-price">From ₹95,000 <span>/ unit</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="IP Wireless Paging & Talkback Phone">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">Wireless</span>
                                 <span class="tag">Wi-Fi</span>
@@ -259,19 +262,19 @@
                         </div>
                     </div>
                     <div class="card product-card">
-                        <div class="card-image" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line></svg>
+                        <div class="card-image">
+                            <img src="images/products/eitu-9000-ip.webp" alt="Paging Over SIP System" width="400" height="200" loading="lazy" style="object-fit:contain;background:#f8f9fa;padding:20px;">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Paging Over SIP System</h3>
                             <p class="card-text">IP67 weatherproof paging system with metal keypad. MS canopy dust cover for harsh industrial environments.</p>
-                            <div class="product-price">From ₹95,000 <span>/ unit</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Paging Over SIP System">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">SIP</span>
                                 <span class="tag">IP67</span>
                                 <span class="tag">Metal Keypad</span>
                             </div>
-                            <a href="contact.html" class="btn btn-secondary btn-sm mt-3">Request Quote</a>
+                            <a href="datasheets/Industrial%20Grade%20IP%20%20Paging%20%26%20Talkback%20Phone.pdf" class="btn btn-secondary btn-sm mt-3 datasheet-download" target="_blank">Download Datasheet</a>
                         </div>
                     </div>
                 </div>
@@ -291,7 +294,7 @@
                         <div class="card-body">
                             <h3 class="card-title">IP to Analog Audio Decoder (EAU-30 IP)</h3>
                             <p class="card-text">Convert IP audio to analog output. Built-in 30W Class-D amplifier with SIP support. Connect through LAN to horn or box speakers.</p>
-                            <div class="product-price">From ₹15,000 <span>/ unit</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="IP to Analog Audio Decoder (EAU-30 IP)">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">Class D Amp</span>
                                 <span class="tag">30W RMS</span>
@@ -307,7 +310,7 @@
                         <div class="card-body">
                             <h3 class="card-title">IP Wireless Audio Decoder (EAU-30 IP-W)</h3>
                             <p class="card-text">Wi-Fi enabled audio decoder for wireless PA systems. 802.11 b/g/n support with LAN fallback option.</p>
-                            <div class="product-price">From ₹15,000 <span>/ unit</span></div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="IP Wireless Audio Decoder (EAU-30 IP-W)">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">Wi-Fi</span>
                                 <span class="tag">802.11 b/g/n</span>
@@ -323,7 +326,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Telephone PA Coupler</h3>
                             <p class="card-text">Interface telephone systems with PA infrastructure. Enable announcements through existing phone networks.</p>
-                            <div class="product-price">Contact for Price</div>
+                            <button class="btn btn-accent btn-sm ask-price-btn" data-product="Telephone PA Coupler">Ask for Price</button>
                             <div class="card-tags">
                                 <span class="tag">Integration</span>
                                 <span class="tag">Hybrid</span>
@@ -461,5 +464,7 @@
     <script src="js/cookie-consent.js" defer></script>
     <!-- Lead Capture for Downloads -->
     <script src="js/lead-capture.js" defer></script>
+    <!-- Price Request Form -->
+    <script src="js/price-request.js" defer></script>
 </body>
 </html>
