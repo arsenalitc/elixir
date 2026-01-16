@@ -13,13 +13,6 @@
 @font-face {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url('../fonts/inter-v20-latin-500.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url('../fonts/inter-v20-latin-600.woff2') format('woff2');
@@ -214,7 +207,7 @@ img {
     display: block;
     padding: 10px 18px;
     color: rgba(255, 255, 255, 0.9);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
     border-radius: var(--radius-sm);
     transition: var(--transition);
@@ -576,7 +569,7 @@ img {
 .stat-label {
     color: var(--text-light);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* =============================================
@@ -658,13 +651,14 @@ section {
 }
 
 .card-image {
-    height: 200px;
+    aspect-ratio: 2/1;
+    min-height: 200px;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .card-image img {
@@ -710,7 +704,7 @@ section {
     border-radius: 6px;
     font-size: 12px;
     color: var(--primary);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .tag-accent {
@@ -1149,7 +1143,7 @@ section {
 .form-group label {
     display: block;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 8px;
     color: var(--text-dark);
 }
@@ -1228,7 +1222,8 @@ section {
     stroke: var(--white);
 }
 
-.footer h4 {
+.footer h4,
+.footer .footer-heading {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 600;

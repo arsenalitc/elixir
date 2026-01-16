@@ -379,8 +379,8 @@
     // Initialize
     function init() {
         if (!hasConsent()) {
-            // Small delay to let page load first
-            setTimeout(showCookieBanner, 1000);
+            // Delay until after LCP measurement (3 seconds)
+            setTimeout(showCookieBanner, 3000);
         } else {
             // Apply saved preferences
             applyPreferences(getPreferences());

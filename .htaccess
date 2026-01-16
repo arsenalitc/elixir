@@ -1,0 +1,86 @@
+# Enable compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml
+</IfModule>
+
+# Set cache headers for static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Images - cache for 1 year
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Fonts - cache for 1 year
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+
+    # CSS and JavaScript - cache for 1 month
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+
+    # HTML - cache for 1 hour
+    ExpiresByType text/html "access plus 1 hour"
+
+    # Default
+    ExpiresDefault "access plus 1 week"
+</IfModule>
+
+# Cache-Control headers
+<IfModule mod_headers.c>
+    # Fonts
+    <FilesMatch "\.(woff2|woff|ttf|eot)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Images
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # CSS and JS
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+
+    # HTML
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "public, max-age=3600"
+    </FilesMatch>
+
+    # PDFs
+    <FilesMatch "\.pdf$">
+        Header set Cache-Control "public, max-age=31536000"
+    </FilesMatch>
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # HSTS - Strict Transport Security (start with 1 year)
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # COOP - Cross-Origin-Opener-Policy
+    Header set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+
+    # CSP - Content Security Policy (allowing Google Analytics and Tawk.to)
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://embed.tawk.to https://va.tawk.to; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://va.tawk.to https://embed.tawk.to wss://va.tawk.to; frame-src https://embed.tawk.to; object-src 'none'; base-uri 'self'; form-action 'self';"
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
+
+# Default charset
+AddDefaultCharset UTF-8
