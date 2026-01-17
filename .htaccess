@@ -75,8 +75,8 @@
     # COOP - Cross-Origin-Opener-Policy
     Header set Cross-Origin-Opener-Policy "same-origin-allow-popups"
 
-    # CSP - Content Security Policy (allowing Google Analytics and Tawk.to)
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://embed.tawk.to https://va.tawk.to; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://va.tawk.to https://embed.tawk.to wss://va.tawk.to; frame-src https://embed.tawk.to; object-src 'none'; base-uri 'self'; form-action 'self';"
+    # CSP - Content Security Policy (allowing Google Analytics, Tawk.to, and OpenStreetMap)
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://embed.tawk.to https://va.tawk.to; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://va.tawk.to https://embed.tawk.to wss://va.tawk.to; frame-src https://embed.tawk.to https://www.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'self';"
 </IfModule>
 
 # Prevent directory listing
